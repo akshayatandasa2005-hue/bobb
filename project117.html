@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Counter Increment</title>
+        <style>
+         body {
+            counter-reset: section;
+         }
+         h2::before {
+            counter-increment: section;
+            content: "Section" counter(section) ":";
+            font-weight: bold;
+         }
+        </style>
+    </head>
+    <body>
+        <h2>Introduction</h2>
+        <h2>Features</h2>
+        <h2>Conclusion</h2>
+    </body>
+</html>
